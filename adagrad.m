@@ -39,7 +39,7 @@ for l=1:length(rho_v)
     ind = zeros(print_step,1);
     G   = zeros(n,1);% running sum of squares of the component-wise gradients
     
-	%stochastic gradient descent - loop over one training set at a time
+	%stochastic gradient descent - loop over one training example at a time
 	  for t = 1:m		
 %         sample index j uniformaly at random
         j = randi(m);
