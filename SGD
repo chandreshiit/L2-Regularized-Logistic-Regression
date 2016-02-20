@@ -1,4 +1,4 @@
-function l2_regu_logistic(train)
+function SGD(train)
 %  Solves L2 regularized logisitc regression 
 %  f(w) = 1/m {\sum_i log(1+exp(-y_iw'*x_i)) + \rho/2*\|w\|_2^2} avg loss +
 %  regularization term
