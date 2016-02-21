@@ -22,7 +22,7 @@ x = [ ones(m,1) x]; % Add a column of ones to x
 n = size(x,2); % number of features
 print_step = 10;
 printout = floor(m/print_step);
-% set paramters in Adadelta
+% set paramters in rmsprop
 epsilon  = 1e-6; % smoothing term
 momentum = 0.9;  % momentum term
 eta      = 0.001; % global learning rate
