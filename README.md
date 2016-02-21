@@ -8,3 +8,4 @@ Algorithms to solve the above problem includes :
 2. Adagrad
 3. Adadelta
 4. RMSPROP
+5. ADAM
