@@ -39,7 +39,7 @@ for l=1:length(rho_v)
     w   = zeros(n,1);
     obj = zeros(print_step,print_step);
     ind = zeros(print_step,1);
-%    initialise the relevant variables in Adadelta
+%    initialise  relevant variables 
     Eg2 = zeros(n,1);
 
 	%stochastic gradient descent - loop over one training set at a time
