@@ -51,7 +51,7 @@ for l=1:length(rho_v)
 %        accumualte  the squared gradients
         Eg2 = momentum*Eg2 + (1-momentum)*(grad.^2);
 %         compute update
-        deltaw = -((sqrt(Eg2 + epsilon)) ./ (sqrt(Ew2 + epsilon))).*grad;
+        deltaw = -((sqrt(Ew2 + epsilon)) ./ (sqrt(Eg2 + epsilon))).*grad;
 %       accumulate updates
         Ew2 =  momentum*Ew2 + (1-momentum)*(deltaw.^2);
         
